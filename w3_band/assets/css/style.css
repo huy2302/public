@@ -1,0 +1,510 @@
+/* Reset CSS */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+html{
+    font-family: Helvetica, Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+.clear {
+    clear: both;
+}
+
+/* 
+1. Làm từ ngoài vào trong
+2. Làm từ trên xuống dưới
+3. Làm từ tổng quan đến chi tiết
+*/
+
+
+/* 
+1. Vị trí
+2. Kích thước (width ; height)
+3. Màu sắc
+4. Kiểu dáng (Kiểu chữ, hình dáng, ....)
+*/
+
+#main{
+   overflow: hidden;
+}
+.row{
+    margin-left: -8px;
+    margin-right: -8px;
+}
+.col{
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+.col-half{
+    width: 50%;
+}
+.col-third{
+    width: 33.33333%;
+}
+.col-full{
+    width: 100%;
+}
+.text-white{
+    color: white!important;
+}
+.text-white-rgba{
+    color: rgba(255, 255, 255, 0.541)!important;
+}
+
+#header{
+    height: 46px;
+    background-color: #000;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+}
+
+#nav{
+   display: inline-block;
+}
+
+#nav li{
+    line-height: 46px;
+    display: inline-block;
+    position: relative;
+}
+
+#nav > li > a{
+    color: white;
+    text-transform: uppercase;    
+}
+
+#nav li a{
+    text-decoration: none;
+    display: block;
+    padding: 0 24px;
+}
+
+#nav > li:hover > a,
+#nav .subnav li:hover a{
+    color: black;
+    background-color: #ccc;
+    transition: .2s;
+}
+
+#nav .subnav{
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    line-height: 38px;
+    top: 46px;
+    left: 0;
+    box-shadow: 0 0 10px rgb(0 0 0 / 40%);
+}
+#nav li:hover .subnav{
+    display: block;
+}
+
+#nav .subnav a{
+    color: #000;
+    min-width: 160px;
+    line-height: 38px;
+}
+#nav .subnav li{
+    width: 100%;
+}
+
+.nav-angle-down{
+    font-size: 13px;
+}
+#header .mobile-menu{
+    float: right;
+    padding: 0 23px;
+    line-height: 46px;
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+#header .search-btn{
+    float: right;
+    display: block;
+    padding: 0 23px;
+    line-height: 46px;
+}
+#header .search-btn:hover{
+    background-color: red;
+    cursor: pointer;
+    transition: .2s;
+}
+#header .menu-btn,
+#header .search-icon{
+    color: #fff;
+    font-size: 16px;  
+}
+#header .mobile-menu:hover {
+    background-color: #ccc;
+}
+#header .mobile-menu:hover .menu-btn {
+    color: black;
+}
+
+#slider{
+    margin-top: 46px;
+    padding-top: 50%;
+    position: relative;
+    background: url('../img/slider/slider2.jpg') top center / cover no-repeat;
+}
+#slider .text-heading{
+    color: #fff;
+    position: absolute;
+    bottom: 46px;
+    /* left: 0;
+    right: 0;
+    text-align: center;  */
+    width: 100%;
+    text-align: center;
+    text-shadow: 2px 1px 2px black;
+}
+
+#slider .text-content{
+    padding-bottom: 16px;
+    font-size: 28px;
+    font-weight: 100;
+}
+
+#slider .text-down{
+    font-size: 15px;
+}
+
+#content{
+    
+}
+
+#content .content-section{
+    width: 800px;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 64px 16px;
+}
+
+#content .section-heading{
+    color: black;
+    text-align: center;
+    margin: 10px 0;
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: 4px;
+    font-family: system-ui;
+}
+
+#content .section-sub-heading{
+    margin: 15px 0;
+    font-style: italic;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.432);
+}
+#content .about-text{
+    font-size: 15px;
+    text-align: justify;
+    line-height: 1.4;
+    margin-bottom: 15px;
+}
+#content .member-list{
+    margin: 48px 0;
+}
+
+#content .member-item{
+    float: left;
+    width: 33.33333%;
+    text-align: center;
+}
+
+#content .member-name{
+    margin: 15px 0; 
+    font-size: 15px;
+}
+
+#content .member-img{
+    width: 154px;
+    margin-top: 15px;
+    border-radius: 4px;
+}
+
+#content .tour-section{
+    background-color: black;
+}
+.ticket-list{
+    background-color: white;
+    margin-top: 40px;
+}
+.ticket-list li{
+    line-height: 40px;
+    font-size: 15px;
+    padding: 0 16px;
+    color: rgba(0, 0, 0, 0.623);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.267);
+}
+.ticket-list .sold-out{
+    background-color: rgb(245, 55, 55);
+    color: white;
+    padding: 2px 8px;
+    margin-left: 10px;
+}
+
+.ticket-list .quantity{
+    color: white;
+    background-color: black;
+    width: 27px;
+    height: 24px;
+    text-align: center;
+    float: right;
+    line-height: 24px;
+    border-radius: 50%;
+    margin-top: 9px;
+    margin-right: 13px;
+}
+
+#content .places-list{
+    margin-top: 32px;
+    overflow: hidden;
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.places-item{
+    float: left;
+    width: 33.333333%;
+    padding: 0 8px;
+    font-size: 15px;
+    font-family: system-ui;
+}
+
+.places-img{
+    width: 100%;
+    display: block;
+}
+.places-img:hover{
+    opacity: 0.6;
+    transition: .3s;
+}
+
+.places-body{
+    background-color: #fff;
+    padding: 0 16px;
+    padding-bottom: 32px;
+    margin-bottom: -16px;
+}
+
+.places-heading{
+    font-size: 15px;
+    padding: 15px 0;
+}
+
+.places-time{
+    padding-bottom: 15px;
+    color: rgba(0, 0, 0, 0.541);
+}
+
+.places-desc{
+    padding-bottom: 15px;
+}
+
+.btn{
+    padding: 9px 17px;
+    color: #fff;
+    text-decoration: none;
+    background-color: black;
+    transition: .3s;
+    border: none;
+    cursor: pointer;
+    appearance: none;
+    -webkit-appearance: none;
+}
+.btn:hover{
+    color: black;
+    background-color: #ccc;
+    /* padding: 15px 23px;
+    cursor: pointer;
+    -ms-transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05); */
+}
+
+.contact-section {
+    width: 800px;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 64px 16px;
+    overflow: hidden;
+}
+
+.contact-text{
+    font-size: 18px;
+    list-style-type: none;
+    padding-bottom: 5px;
+    max-width: 380px;
+}
+.contact-section i{
+    padding-right: 10px;
+}
+.section-input{
+    display: inline-block;
+    float: right;
+}
+
+
+.contact-info{
+    font-size: 18px;
+    line-height: 1.5;
+    padding: 32px 10px;
+    width: 50%;
+}
+.contact-form{
+    font-size: 15px;
+}
+.contact-form .form-control{
+    padding: 8px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+.contact-form .row1{
+    margin-bottom: 7px;
+}
+.contact-submit{ 
+    
+    float: right;
+    margin-top: 16px;
+    margin-bottom: 48px;
+}
+
+.content-map img{
+    width: 100%;
+        
+}
+#footer{
+    padding: 64px 16px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.555);
+}
+.footer-icons{
+    font-size:22px;
+}
+.footer-icons i:hover{
+    color: rgba(0, 0, 0, 0.295);
+}
+#footer .footer-text{
+    margin: 15px 0;
+    font-size: 15px;
+}
+#footer .footer-text a{
+    color: rgba(0, 0, 0, 0.555);
+}
+
+.modal{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.4);
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+.modal-container {
+    background-color: #000;
+    width: 300px;
+    position: relative;
+    min-height: 450px;
+    /* max-width: calc(100% - 32px); */
+    animation: hideBuyTickets ease 0.5s;
+    
+}
+.modal-header i{
+    margin-right: 10px;
+}
+
+.modal-header {
+    background-color: #009688;
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+    padding: 42px 16px;
+}
+.modal-close {
+    padding: 18px 16px;
+    color: #fff;
+    font-size: 12px;
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+    transition: 0.2s;
+    
+}
+.modal-close:hover{
+    background-color: rgba(0, 0, 0, 0.384);
+}
+.modal-body {
+    padding: 0 16px;
+    margin-top: -10px;
+}
+.modal-label{
+    display: block;
+    font-size: 15px;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+.modal-input {
+    padding: 10px;
+    margin: 0px;
+    border: revert;
+    width: 100%;
+    border: 1px solid #ccc;
+}
+.modal-buy {
+    background-color: #009688;
+    width: 100%;
+    display: block;
+    font-size: 15px;
+    color: #fff;
+    padding: 16px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+}
+.modal-buy:hover{
+    background-color: #ccc;
+    color: black;
+}
+.modal-footer {
+    color: black;
+    float: right;
+    font-size: 15px;
+    margin: 16px 0;
+    padding-bottom: 16px;
+}
+.modal-footer a{
+    color: #2196F3;
+}
+.modal.open{
+    display: flex;
+}
+@keyframes hideBuyTickets{
+    from{
+        top: -320px;
+        opacity: 0.5;
+    }
+    to{
+        top: 0;
+        opacity: 1;
+    }
+}
+

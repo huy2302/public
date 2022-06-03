@@ -1,0 +1,66 @@
+/* Tablet & Moblie*/
+@media (max-width: 63.9375em){
+    .btn{
+        padding: 12px 20px;
+        font-size: 15px;
+    }
+    .contact-form .form-control{
+        padding: 12px;
+    }
+    .contact-submit.btn{
+        padding-left: 35px;
+        padding-right: 35px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 46.1875em){
+    #nav{
+        display: block;
+    }
+    #nav > li{
+        display: block;
+    }
+    #header .search-btn{
+        display: none;
+    }
+    #content .member-item,
+    .places-item{
+        float: none;
+        width: auto;
+    }
+    .places-body{
+        padding-bottom: 16px;
+        margin-bottom: 16px;
+    }
+    .contact-info,
+    .col-half{
+        width: 100%;
+    }
+    #content .member-img{
+        width: 60%;
+    }
+    #header .mobile-menu{
+        display: block;
+    }
+    #header{
+        overflow: hidden;
+    }
+    #nav .subnav{
+        position: initial;
+        background-color: rgb(22, 22, 22);
+        padding: 5px 25px;
+    }
+    #nav .subnav a{
+        color: white;
+        padding: 5px 30px;
+    }
+    .contact-submit {
+        width: 100%;
+        margin-top: 16px;
+        padding: 15px 0;
+    }
+    .btn{
+        width: 100%;
+    }
+}
